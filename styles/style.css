@@ -7,6 +7,8 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+
+  border: 1px solid red;
 }
 
 .header {
@@ -14,13 +16,36 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  display: flex;
+  align-items: center;
+  position: relative;  /*?*/
+  border: 1px solid red;
 }
+
+.header__title{
+  width: 740px;
+}
+
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+
+  }
+
+.logo {
+  width: 183px;
+  height: 32px;
 }
+
+.logo_place_header {
+position: absolute;
+top: 30px;
+left: 64px;
+}
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
