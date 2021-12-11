@@ -6,10 +6,8 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
 
-    /* выше для экранов больше 1600px отцентрировали весь контент */
+  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-
-  border: 1px solid red; /**/
 }
 
 .header {
@@ -21,7 +19,6 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  /*border: 1px solid red;*/
   background-color:  #f2f2f2;
   overflow: hidden;
   margin: 0;
@@ -35,6 +32,7 @@
   z-index: 2;
   position: absolute;
   left: 64px;
+  margin: 0;
 }
 
 .header__subtitle {
@@ -45,11 +43,16 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  z-index: 2;  /*?*/
+  z-index: 2;
+  margin: 0;
 }
 
 .header__link {
   text-decoration: none;
+}
+
+.header__link:visited {
+  color: #2f80ed;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -88,6 +91,9 @@
   top: 0px;
   left: 0px;
   height: 35px;
+  background-image: url(../images/logo_place_footer.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
 }
 
 .description {
@@ -109,7 +115,7 @@
 }
 
 .two-columns__brief{
-  box-sizing: border-box; /**/
+  box-sizing: border-box; /*? сомневаюсь в нужности*/
   width: 175px;
   line-height: 1.2;
   font-size: 18px;
@@ -118,6 +124,7 @@
 
   display: flex;
   align-self: flex-start;
+  margin: 0;
 }
 
 .two-columns__main-text{
@@ -164,7 +171,7 @@
 
 .section-title_theme_dark {
   color: white;  /*? Стоит ли дублировать?*/
-  margin: 90px 0px 0px 0px;
+  padding: 90px 0px 0px 0px;
 }
 
 .section-section-subtitle {
@@ -182,10 +189,11 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin: 20px 0px 0px 0px;
   width: 60%;
   display: inline-block;
   text-align: center;
+  padding: 20px 0px 0px 0px;
+  margin: 0;
 }
 
 .table {
@@ -197,28 +205,24 @@
 }
 
 .table_theme_dark {
-  margin: 0 0 90px 0;
+  padding: 0 0 90px 0;
   list-style:none;
-  padding-left: 0px;
   z-index: 1;
 }
 
 .table__cell {
   width: 250px;
   align-items: flex-start;
-  margin-top: 60px;
-  border: 1px solid red;
+  padding-top: 60px;
 }
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
-  margin-right: 0;
-  margin-top: 80px;
+  padding-top: 80px;
   z-index: 0;
 }
-
 
 .table__heading {
   line-height: 1.15;
@@ -231,11 +235,9 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-
-  border: 1px solid blue;
-  margin: 20px 0 0 0;
+  padding: 20px 0 0 0;
+  margin: 0;
 }
-
 
 .feynman {
   display: flex;
@@ -278,10 +280,9 @@
   right: 48px;
 }
 
-
 .kaufman {
   background-color: #1f1f1f;
-  color: white;  /*Лучше изменить цвет на уровне секции или в каждом элементе?*/
+  color: white;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -310,7 +311,6 @@
 
 .footer__columns {
   width: 90%;
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -319,7 +319,6 @@
 .footer__column_content_copyright {
   flex-basis: 711px;
   position: relative;
-  border: 1px solid blue;
 }
 
 .footer__author {
