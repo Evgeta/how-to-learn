@@ -17,9 +17,9 @@
   /* выше установили ограничения для секции */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   position: relative;
-  background-color:  #f2f2f2;
+  background-color: #f2f2f2;
   overflow: hidden;
   margin: 0;
 }
@@ -29,10 +29,8 @@
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
-  z-index: 2;
-  position: absolute;
-  left: 64px;
-  margin: 0;
+  z-index: 3;
+  margin: 0 0 0 64px;
 }
 
 .header__subtitle {
@@ -49,9 +47,6 @@
 
 .header__link {
   text-decoration: none;
-}
-
-.header__link:visited {
   color: #2f80ed;
 }
 
@@ -84,12 +79,10 @@
   position: absolute;
   top: 30px;
   left: 64px;
+  z-index: 2;
 }
 
 .logo_place_footer {
-  position: absolute;
-  top: 0px;
-  left: 0px;
   height: 35px;
   background-image: url(../images/logo_place_footer.svg);
   background-repeat: no-repeat;
@@ -105,29 +98,28 @@
   padding-bottom: 100px;
 }
 
-.two-columns{
+.two-columns {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 80%;
- /* min-height: 230px;  /*?*/
+  min-height: 230px;
 }
 
-.two-columns__brief{
-  box-sizing: border-box; /*? сомневаюсь в нужности*/
+.two-columns__brief {
+  box-sizing: border-box;
   width: 175px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
-
   display: flex;
   align-self: flex-start;
   margin: 0;
 }
 
-.two-columns__main-text{
+.two-columns__main-text {
   width: 80%;
   min-width: 784px;
   line-height: 34px;
@@ -136,8 +128,8 @@
 }
 
 .two-columns__paragraph {
-   padding: 30px 0 0 0;
-   margin: 0;
+  padding: 30px 0 0 0;
+  margin: 0;
 }
 
 .two-columns__paragraph:first-of-type {
@@ -156,6 +148,7 @@
   align-items: center;
   position: relative;
   margin: 0;
+  padding-bottom: 100px;
 }
 
 .section-title {
@@ -166,12 +159,13 @@
   font-weight: bold;
   width: 60%;
   margin: 0;
-  padding: 0px 0px 20px 0px;
+  padding: 0 0 20px 0;
 }
 
 .section-title_theme_dark {
-  color: white;  /*? Стоит ли дублировать?*/
-  padding: 90px 0px 0px 0px;
+  z-index: 2;
+  color: white;
+  padding: 90px 0 0 0;
 }
 
 .section-section-subtitle {
@@ -185,28 +179,28 @@
 }
 
 .section-subtitle_theme_dark {
-  color: white;  /*? Стоит ли дублировать? Цвет ижет также с секции.*/
+  color: white;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   width: 60%;
   display: inline-block;
   text-align: center;
-  padding: 20px 0px 0px 0px;
+  padding: 20px 0 0 0;
   margin: 0;
 }
 
 .table {
-  width:1100px;
+  width: 1100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0;  /*?*/
+  margin: 0;
 }
 
 .table_theme_dark {
   padding: 0 0 90px 0;
-  list-style:none;
+  list-style: none;
   z-index: 1;
 }
 
@@ -244,11 +238,11 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  background-color: #f2f2f2;
   background-image: url(../images/feynman.png);
   background-repeat: no-repeat;
   background-position: left bottom;
   height: 890px;
-  padding: 100px 0px 0px 0px;
 }
 
 .feynman__title {
@@ -259,6 +253,7 @@
   display: inline-block;
   text-align: center;
   margin: 0;
+  padding: 100px 0 0 0;
 }
 
 .feynman__subtitle {
@@ -295,7 +290,7 @@
   right: -210px;
   z-index: 0;
   width: 877px;
-	height: 877px;
+  height: 877px;
 }
 
 .footer {
@@ -316,39 +311,40 @@
   justify-content: space-between;
 }
 
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
 .footer__column_content_copyright {
   flex-basis: 711px;
-  position: relative;
 }
+
+.footer__column_content_info {}
 
 .footer__author {
   color: white;
-  position: absolute;
-  left: 0;
-  bottom: 0;
   padding: 18px 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
 }
 
-.footer__column_heading {
+.footer__column-heading {
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
-  color: white;
   margin: 0;
 }
 
-.footer__column_links {
-  flex-direction: column;
+.footer__column-links {
   list-style: none;
   padding: 20px 0 16px 0;
   margin: 0;
 }
 
-.footer__column_link {
-  display: flex;
+.footer__column-link {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
