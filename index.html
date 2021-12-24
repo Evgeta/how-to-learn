@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Евгения Тарасюк">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Евгения Тарасюк" />
     <title>Научиться учиться</title>
   </head>
   <body>
@@ -16,7 +16,7 @@
           target="_blank"
           class="logo logo_place_header"
         >
-          <img src="./images/logo_place_header.svg" alt="Яндекс Практикум">
+          <img src="./images/logo_place_header.svg" alt="Яндекс Практикум" />
         </a>
         <h1 class="header__title">Научиться учиться</h1>
         <p class="header__subtitle">
@@ -56,9 +56,73 @@
             </div>
           </div>
         </section>
-        <section>
+        <section class="techniques">
+          <h2 class="section-title">Техники обучения</h2>
+          <p class="section-subtitle">Пять практик от Барбары Оакли</p>
+          <ul class="cards">
+            <li class="cards__item">
+              <img
+                class="cards__image"
+                src="./images/cards-attention.png"
+                alt="Книга 101 эссе"
+              />
+              <h3 class="cards__title">Два вида внимания</h3>
+              <p class="cards__description">
+                Глубокие знания возникают, если чередовать сфокусированное и
+                рассеянное мышление.
+              </p>
+            </li>
+            <li class="cards__item">
+              <img
+                class="cards__image"
+                src="./images/cards-recall.png"
+                alt="Воспоминание"
+              />
+              <h3 class="cards__title">Recall</h3>
+              <p class="cards__description">
+                Вспоминайте изученное — это позволит соединить разрозненные
+                порции памяти.
+              </p>
+            </li>
+            <li class="cards__item">
+              <img
+                class="cards__image"
+                src="./images/cards-interliving.png"
+                alt="Интерливинг"
+              />
+              <h3 class="cards__title">Интерливинг</h3>
+              <p class="cards__description">
+                Изучайте несколько навыков одновременно, они обогащают друг
+                друга.
+              </p>
+            </li>
+            <li class="cards__item">
+              <img
+                class="cards__image"
+                src="./images/cards-question.png"
+                alt="Вопросы"
+              />
+              <h3 class="cards__title">Вопросы</h3>
+              <p class="cards__description">
+                Слушая преподавателя, придумывайте хороший вопрос, который вас
+                действительно волнует.
+              </p>
+            </li>
+            <li class="cards__item">
+              <img
+                class="cards__image"
+                src="./images/cards-competence.png"
+                alt="Книги в руке"
+              />
+              <h3 class="cards__title">Иллюзия компетентности</h3>
+              <p class="cards__description">
+                Повторите про себя, запишите, расскажите другу: вам только
+                кажется, что вы владеете новой темой.
+              </p>
+            </li>
+          </ul>
         </section>
-        <section class="digits">
+        <!--<section class="digits">
           <h2 class="section-title">Цифры и факты</h2>
           <p class="section-subtitle">Про учёбу и мозг</p>
           <ul class="table">
@@ -105,6 +169,20 @@
               <p class="table__text">Открытие условного рефлекса</p>
             </li>
           </ul>
+        </section>-->
+        <section class="video">
+          <h2 class="section-title">Видео нa TED</h2>
+          <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
+          <div class="video__iframes">
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" title="Первые 20 часов - как чему-то научиться | Джош Кауфман | TEDxCSU"
+
+             allowfullscreen></iframe>
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" title="В голове мастера-прокрастинатора | Тим Урбан" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!--    <iframe
+width="100%" height="auto"
+src="https://www.youtube.com/watch?v=arj7oStGLkU" frameborder="0" allowfullscreen>
+</iframe>-->
+          </div>
         </section>
         <section class="feynman">
           <h2 class="feynman__title">Метод Фейнмана</h2>
