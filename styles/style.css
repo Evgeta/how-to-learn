@@ -296,7 +296,6 @@
 
 .khan__container{
   width: 80%;
-  border: solid 1px red;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -345,7 +344,6 @@
 .khan__book-container {
   display: flex;
   align-items: flex-start;
-  border: solid 1px green;
   padding-top: 68px;
 }
 
@@ -462,7 +460,6 @@
   opacity: .7;
 }
 
-
 .kaufman {
   background-color: #1f1f1f;
   color: white;
@@ -481,6 +478,29 @@
   background-image: url(../images/kaufman-triangle.svg);
   background-size: cover;
   top: 0;
+}
+
+.resources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 217px;
+}
+
+.resources__logo-zone {
+  width: 1100px;
+  padding-top: 80px;
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+}
+
+.resources__logo {
+  width: 270px;
+  height: 38px;
 }
 
 .footer {
